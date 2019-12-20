@@ -7,7 +7,7 @@ const LangItem = ({lang}) => <li>{lang}</li>
 
 const LangList = ({langs}) => {
   return (<ul>
-    {langs.map(l => <LangItem lang={l} />)}
+    {langs.map((l, i) => <LangItem lang={l} key={i} />)}
   </ul>)
 }
 
